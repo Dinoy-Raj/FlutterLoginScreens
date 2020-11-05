@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 
 
 
-class SignupPage extends StatefulWidget {
+class SignUpPage extends StatefulWidget {
   @override
-  _SignupPageState createState() => _SignupPageState();
+  _SignUpPageState createState() => _SignUpPageState();
 }
 
 
 
 
 
-class _SignupPageState extends State<SignupPage> {
+class _SignUpPageState extends State<SignUpPage> {
 
   @override
   Widget build(BuildContext context) {
@@ -186,25 +186,7 @@ class _SignupPageState extends State<SignupPage> {
           ),
           SizedBox(height: 50),
 
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Text("New To Spotify  ?",
-                style: TextStyle(
 
-                ),),
-
-              SizedBox(width: 5.0),
-              InkWell(
-                child: Text("Register",
-                    style:TextStyle(
-                      color: Colors.green,
-                      fontWeight: FontWeight.bold,
-                      //decoration: TextDecoration.underline,
-                    )),
-              )
-            ],
-          )
         ],
       ),
 

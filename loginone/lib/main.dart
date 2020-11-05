@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
 debugShowCheckedModeBanner: false,
       routes: <String , WidgetBuilder>{
-  '/signup' : (BuildContext context) => new SignupPage()
+  '/signup' : (BuildContext context) => new SignUpPage()
       },
       home: MyHomePage(),
     );
@@ -139,6 +139,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       onTap: (){
 
 
+
+
                       },
                       child: Center(
                         child: Text(
@@ -209,7 +211,8 @@ class _MyHomePageState extends State<MyHomePage> {
               SizedBox(width: 5.0),
               InkWell(
                 onTap: (){
-                  Navigator.of(context).pushNamed('/signup');
+
+                  Navigator.of(context).push(MaterialPageRoute(builder: (_) => SignUpPage()));
                 },
                 child: Text("Register",
                 style:TextStyle(

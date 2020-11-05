@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'signup.dart';
 void main() {
   runApp(MyApp());
 }
@@ -10,6 +10,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
 debugShowCheckedModeBanner: false,
+      routes: <String , WidgetBuilder>{
+  '/signup' : (BuildContext context) => new SignupPage()
+      },
       home: MyHomePage(),
     );
   }
@@ -205,6 +208,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
               SizedBox(width: 5.0),
               InkWell(
+                onTap: (){
+                  Navigator.of(context).pushNamed('/signup');
+                },
                 child: Text("Register",
                 style:TextStyle(
                   color: Colors.green,
